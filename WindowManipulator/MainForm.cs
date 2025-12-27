@@ -47,6 +47,7 @@ namespace WindowManipulator
             ScreenArea.Controls.Add(control);
             control.AssignInfo(window, info);
             windows.Add(control);
+            RequestSelection(control);
         }
 
         public void UnregisterWindow(WindowControl control)
